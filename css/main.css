@@ -4,6 +4,24 @@ body {
 	margin: 0;
 }
 
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+	}
+}
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -94,6 +112,8 @@ p {
 .about__sun-image {
 	width: 100px;
 	height: 100px;
+	animation: rotation 10s infinite linear;
+	-webkit-animation: rotation 10s infinite linear;
 }
 
 .accent-text {
@@ -195,7 +215,8 @@ button:hover {
 	margin-top: 40px;
 }
 
-input, select {
+input,
+select {
 	outline: none;
 }
 
@@ -212,7 +233,6 @@ footer {
 .footer__container {
 	display: flex;
 	justify-content: center;
-
 }
 
 .footer__copyright {
@@ -223,7 +243,6 @@ footer {
 
 .footer__group {
 	margin-right: 80px;
-
 }
 
 .footer__group h3 {
