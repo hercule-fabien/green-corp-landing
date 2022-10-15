@@ -1,2 +1,2 @@
 # green-corp-landing
-### Sber University Frontend Course
+### SberUniversity Frontend Course
