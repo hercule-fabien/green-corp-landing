@@ -82,6 +82,9 @@ p {
     letter-spacing: 1px;
 }
 
+.animate__fadeInLeft, .animate__fadeInRight {
+    --animate-duration: 2s;
+}
 
 .about {
     display: flex;
@@ -107,6 +110,11 @@ p {
 
 .about__info {
     max-width: 550px;
+}
+
+.right-angle {
+    font-weight: 100;
+    font-size: 0.8em;
 }
 
 .about__image {
