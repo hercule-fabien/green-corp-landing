@@ -82,7 +82,8 @@ p {
     letter-spacing: 1px;
 }
 
-.animate__fadeInLeft, .animate__fadeInRight {
+.animate__fadeInLeft,
+.animate__fadeInRight {
     --animate-duration: 2s;
 }
 
