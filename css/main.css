@@ -168,6 +168,64 @@ button:hover {
     box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
 }
 
+.features {
+    background-color: #fff;
+    padding: 115px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    column-gap: 50px;
+}
+
+.card__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: #eaeff9;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.fa-solar-panel {
+    color: #ffb406;
+}
+
+#second_card {
+    color: #ad1714;
+}
+
+.fa-chart-line {
+    color: #22a030;
+}
+
+.card {
+    padding: 35px 40px 25px 40px;
+    border: solid #D9E4E6 1px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.8;
+}
 
 .form__container {
     width: 550px;
@@ -291,6 +349,29 @@ footer {
         width: 75px;
         height: 75px;
     }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        column-gap: 5px;
+    }
+
+    .card {
+        padding: 10px;
+        border: solid #D9E4E6 1px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    .card p {
+        font-size: 15px;
+        line-height: 16px;
+        opacity: 0.8;
+    }
 }
 
 @media (max-width: 720px) {
@@ -325,6 +406,18 @@ footer {
         height: 75px;
     }
 
+    .features {
+        background-color: #fff;
+        padding: 50px 10px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-around;
+        column-gap: 50px;
+    }
+
     .form {
         padding: 50px 10px;
     }
@@ -341,4 +434,3 @@ footer {
         flex-direction: column;
     }
 }
-
