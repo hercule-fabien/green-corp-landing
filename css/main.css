@@ -171,16 +171,15 @@ button:hover {
 .features {
     background-color: #fff;
     padding: 115px 60px;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
-    column-gap: 50px;
+    gap: 50px;
 }
 
 .card__logo {
@@ -227,8 +226,72 @@ button:hover {
     opacity: 0.8;
 }
 
+.features__border {
+    margin: 50px 0 50px 0;
+    border: solid 1px #E6EAF4;
+}
+
+.features__feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features__feedback-left {
+    margin-right: 10px;
+}
+
+.features__feedback-left h2{
+    font-size: 48px;
+}
+
+.features__feedback-left p {
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+
 .form__container {
     width: 550px;
+}
+
+.features__feedback-right {
+    display: flex;
+}
+
+.features__box {
+    padding: 30px 40px 25px 40px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.features__box h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+.features__box p, .features__box h3 {
+    color: #fff;
+}
+
+
+.features__savings-box {
+    background-color: #dc5e26;
+    box-shadow: 0px 6px 0px rgb(221 95 38 / 20%);
+    margin-right: 30px;
+}
+
+.features__rate-box {
+    background-color: #1D263A;
+    box-shadow: 0px 6px 0px rgb(29 38 58 / 20%);
+}
+
+.fa-star {
+    color: #ff7039;
 }
 
 .form {
@@ -331,6 +394,16 @@ footer {
     margin-bottom: 15px;
 }
 
+/* 
+
+
+
+Mobile versions 
+
+
+
+*/
+
 @media (max-width: 1024px) {
     .about {
         padding: 115px 20px;
@@ -371,6 +444,33 @@ footer {
         font-size: 15px;
         line-height: 16px;
         opacity: 0.8;
+    }
+
+    .features__feedback {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features__feedback-left {
+        margin-right: 0px;
+    }
+
+    .features__feedback-left h2{
+        font-size: 36px;
+    }
+
+    .features__feedback-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features__box h3 {
+        font-size: 36px;
+    }
+
+    .features__savings-box {
+        margin-right: 0px;
+        margin-bottom: 30px;
     }
 }
 
