@@ -77,6 +77,7 @@ a:visited {
 }
 
 .about {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -84,6 +85,13 @@ a:visited {
     padding-bottom: 115px;
     background: url('/img/back.png') no-repeat center;
     background-size: cover;
+}
+
+.orb-canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
 }
 
 .about h1 {
@@ -530,7 +538,8 @@ Mobile versions
         margin-right: 0;
     }
 
-    .features__feedback-left h2, .features__box h3 {
+    .features__feedback-left h2,
+    .features__box h3 {
         font-size: 36px;
     }
 
@@ -577,5 +586,3 @@ Mobile versions
         flex-direction: column;
     }
 }
-
-
