@@ -63,4 +63,22 @@ function updateScroll() {
   }
 }
 
+function addSmoothScroll(link) {
+  link.addEventListener("click", onLinkClick);
+}
+
+function onLinkClick(event) {
+  event.preventDefault();
+
+  document.querySelector(event.target.getAttribute("href")).scrollIntoView({
+    behavior: "smooth",
+  });
+}
+
 window.addEventListener("scroll", updateScroll);
+
+document.querySelectorAll("a[href^='#']").forEach((link) => {
+  addSmoothScroll(link);
+});
+
+addSmoothScroll(document.querySelector(".more-button"));
