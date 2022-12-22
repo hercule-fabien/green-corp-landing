@@ -19,8 +19,6 @@ function initIncreaseNumberAnimation() {
   increaseNumberAnimationStep(0, element, 5000);
 }
 
-initIncreaseNumberAnimation();
-
 let budget = document.querySelector("#budget");
 budget.addEventListener("change", function handleEventChange(event) {
   if (event.target.value === "other") {
@@ -45,3 +43,13 @@ budget.addEventListener("change", function handleEventChange(event) {
     document.querySelector("#form form").removeChild(other_input);
   }
 });
+
+function updateScroll() {
+  if (window.scrollY > 0) {
+    document.querySelector("header").classList.add("header__scrolled");
+  } else {
+    document.querySelector("header").classList.remove("header__scrolled");
+  }
+}
+
+window.addEventListener("scroll", updateScroll);
