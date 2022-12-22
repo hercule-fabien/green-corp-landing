@@ -20,3 +20,28 @@ function initIncreaseNumberAnimation() {
 }
 
 initIncreaseNumberAnimation();
+
+let budget = document.querySelector("#budget");
+budget.addEventListener("change", function handleEventChange(event) {
+  if (event.target.value === "other") {
+    // Do smthn
+    formContainer = document.createElement("div");
+    formContainer.classList.add("form__group");
+    formContainer.classList.add("form__other-input");
+
+    const input = document.createElement("input");
+    input.setAttribute("placeholder", "Введите ваш вариант");
+    input.setAttribute("type", "text");
+
+    formContainer.appendChild(input);
+
+    const form = document.querySelector("#form form");
+    form.insertBefore(formContainer, document.querySelector(".form__submit"));
+  }
+
+  let other_input = document.querySelector(".form__other-input");
+
+  if (event.target.value !== "other" && Boolean(other_input)) {
+    document.querySelector("#form form").removeChild(other_input);
+  }
+});
